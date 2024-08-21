@@ -21,7 +21,6 @@ header, body{
     text-align: center;
     min-width: 80%;
     height: 100vh;
-    /* background-color: #bec5bd70; */
     margin: auto;
     border-radius: 10px;
     overflow-y: auto;
@@ -71,6 +70,6 @@ button{
 @media screen and (max-width:450px) {
     .Main{
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(26, 60%);
+        grid-template-rows: repeat(18, 60%);
     }
 }
