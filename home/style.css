@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #bdb4b4 ;
+    overflow: hidden;
+    height: 100vh;
+}
+
+header, body{
+    box-sizing: border-box;
+}
+
+.Main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 60%);
+    gap: 10px 30px;
+    justify-content: center;
+    text-align: center;
+    min-width: 80%;
+    height: 100vh;
+    /* background-color: #bec5bd70; */
+    margin: auto;
+    border-radius: 10px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    color: #242323;
+}
+
+.card{
+    background-color: rgb(28, 86, 49);
+    min-height: 17vw;
+    padding: 0 10px;
+    border: 1px solid #0008;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #2e2d2d;
+}
+
+img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+.card__img{
+    margin-top: 15px;
+}
+
+button{
+    width: 15%;
+    height: 10%;
+    border-radius: 20px;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+@media  screen and (max-width:750px) {
+    .Main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(13, 60%);
+    }
+    button{
+        width: 20%;
+        height: 8%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .Main{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(26, 60%);
+    }
+}
